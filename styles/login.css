@@ -1,16 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #f5f5f5;
-    overflow: hidden;
-    font-family: 'Familjen Grotesk', sans-serif;;
-}
-
-.bg-verde {
+#login .bg-verde {
     position: absolute;
     width: 200vw;
     height: 190vh;
@@ -25,7 +13,7 @@ body {
     position: absolute;
     width: 320px;
     height: 210px;
-    top: 50%;
+    top: 40%;
     left: 50%;
     z-index: 9999;
     padding: 15px 0;
@@ -68,15 +56,40 @@ body {
     color: #818a7d;
 }
 
-.cadastre-se{
+.acessar{
     position: absolute;
     width: 300px;
     height: 210px;
-    top: 87%;
-    left: 55.5%;
+    top: 80%;
+    left: 57.3%;
     z-index: 9999;
     transform: translate(-50%, -50%);
     font-size: 25px;
     color: #818a7d;
     text-transform: uppercase;
+}
+
+.cadastre-se {
+    position: absolute;
+    width: 300px;
+    height: 210px;
+    top: 102%;
+    left: 57.9%;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    color: #818a7d;
+}
+
+#image {
+    position: fixed;
+    z-index: 9999;
+    top: 92%;
+    left: 4%;
+    transform: translate(-50%, -50%);
+}
+
+#image svg {
+    width: 100px;
+    height: 200px;
 }
