@@ -56,19 +56,6 @@
     color: #818a7d;
 }
 
-.acessar{
-    position: absolute;
-    width: 300px;
-    height: 210px;
-    top: 80%;
-    left: 57.3%;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
-    color: #818a7d;
-    text-transform: uppercase;
-}
-
 .cadastre-se {
     position: absolute;
     width: 300px;
@@ -92,4 +79,26 @@
 #image svg {
     width: 100px;
     height: 200px;
+}
+
+.acessarr{
+    text-decoration: none;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #818a7d;
+    text-transform: uppercase;
+    font-family: 'Familjen Grotesk', sans-serif;
+}
+
+.acessarr {
+    transition: 0.5s;
+}
+
+.acessarr:hover{
+    color: #88ce6a; 
+    transition: 0.5s;
 }
