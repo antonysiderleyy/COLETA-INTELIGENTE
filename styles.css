@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    overflow: hidden;
+    font-family: 'Familjen Grotesk', sans-serif;;
+}
+
+.bg-verde {
+    position: absolute;
+    width: 200vw;
+    height: 190vh;
+    margin-top: 25px;
+    left: -50vw;
+    display: flex;
+    background: #e3f0dc;
+    border-radius: 100%;
+}
+
+.quadrado-loginho {
+    position: absolute;
+    width: 320px;
+    height: 210px;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    background-color: #818a7d;
+}
+
+.quadrado-loginho .titulo-login {
+    color: #e3f0dc;
+    font-size: 24px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.quadrado-loginho input {
+    width: 220px;
+    height: 40px;
+    margin: 6px 0;
+    padding: 0 15px;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    background-color: #e3f0dc;
+    color: #818a7d;
+
+    font-size: 18px;
+    font-family: 'Familjen Grotesk', sans-serif;;
+    
+}
+
+.quadrado-loginho input::placeholder {
+    font-family: inherit;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: center;
+    color: #818a7d;
+}
+
+.cadastre-se{
+    position: absolute;
+    width: 300px;
+    height: 210px;
+    top: 87%;
+    left: 55.5%;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #818a7d;
+    text-transform: uppercase;
+}
