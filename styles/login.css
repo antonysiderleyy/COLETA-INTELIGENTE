@@ -1,12 +1,11 @@
-#login .bg-verde {
+.bg-verde {
     position: absolute;
     width: 200vw;
-    height: 190vh;
-    margin-top: 25px;
+    height: 95vh;
     left: -50vw;
     display: flex;
     background: #e3f0dc;
-    border-radius: 100%;
+    border-radius: 0 0 50% 50%;
 }
 
 .quadrado-loginho {

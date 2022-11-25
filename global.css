@@ -1,7 +1,7 @@
 *, *::before, *::after {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
 };
@@ -28,10 +28,4 @@ body {
     flex-direction: column;
     font: 400 16px 'Inter', sans-serif;
     background-color: #FFFFFF;
-}
-
-section {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
 }
