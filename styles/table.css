@@ -1,0 +1,179 @@
+section.main {
+  display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: calc(100% - 100px);
+  margin: 10px auto;
+}
+
+.search input {
+  height: 40px;
+  flex: 1;
+  margin-right: 10px;
+  padding: 0 12px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: inherit;
+  border: 1px solid #d3d3d3;
+}
+
+.search input::-webkit-outer-spin-button,
+.search input::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.search input:last-of-type {
+  margin-right: 0;
+}
+
+.table {
+  position: relative;
+  width: calc(100% - 100px);
+  margin: 0 auto;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 1);
+}
+
+.table .table-head {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+}
+
+.table .table-head .title {
+  height: 3rem;
+  padding: 10px 20px;
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table .table-head .title-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+#table-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#table-body span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#table-body .table-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.table .table-head .title:first-of-type,
+#table-body .table-item .info .label:first-of-type {
+  max-width: 3vw;
+}
+
+#table-body .table-item.hidden {
+  display: none;
+}
+
+#table-body .table-item:last-of-type {
+  border-bottom: none;
+}
+
+#table-body .table-item .info {
+  flex: 1;
+  width: 100%;
+  height: 3rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  transition: 0.2s ease;
+}
+
+#table-body .table-item .info:hover {
+  background: rgba(229, 229, 229, 1);
+}
+
+#table-body .table-item .map {
+  height: 500px;
+  width: 100%;
+  display: none;
+  background: radial-gradient(black, transparent);
+}
+
+#table-body .table-item .map.visible {
+  display: flex;
+}
+
+#table-body .table-item .label {
+  height: 3rem;
+  padding: 10px 20px;
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#table-body .table-item .label:last-of-type {
+  border-right: none;
+}
+
+#table-body .table-item .label span, 
+#table-body .table-item .label a {
+  font-size: 13px;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+#table-body .table-item .label a:hover {
+  text-decoration: underline;
+}
+
+#table-body .table-item .label.buttons button {
+  height: 2rem;
+  padding: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #d3d3d3;
+  font-size: 12px;
+  outline: 0;
+  margin: 0 6px;
+  border-radius: 3px;
+}
+
+#table-body .table-item .label.buttons button:nth-child(1) {
+  background: #baeea7;
+}
+
+#table-body .table-item .label.buttons button:nth-child(2) {
+  background: #95bffd;
+}

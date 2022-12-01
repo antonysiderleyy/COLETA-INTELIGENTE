@@ -1,31 +1,36 @@
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    box-sizing: border-box;
-    text-rendering: optimizeLegibility;
-};
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
 
 html {
-    scroll-behavior: smooth;
-    line-height: 1.15;
-    font-family: sans-serif;
-    -webkit-text-size-adjust: 100%;
-}
-    
-body {
-    overflow: hidden;
-    user-select: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  line-height: 1.15;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
 }
 
-.container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    font: 400 16px 'Inter', sans-serif;
-    background-color: #FFFFFF;
+body {
+  overflow: hidden;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#coleta-inteligente {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  font: 400 16px "Inter", sans-serif;
+  background: #ffffff;
+}
+
+section {
+  height: 100vh;
 }

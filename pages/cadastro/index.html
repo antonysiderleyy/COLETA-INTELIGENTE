@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="coleta-inteligente">
+      <div class="content">
+        <header class="header">
+          <div class="logo">
+            <img src="/public/logo.svg" alt="Logo" />
+          </div>
+        </header>
+        <div id="info">
+          <img src="/public/jornada.svg" alt="Comece sua jornada na reciclagem" />
+        </div>
+        <div id="signup">
+          <h1 class="title">Crie sua conta</h1>
+          <div class="wrapper encargo">
+            <div class="label">Encargo</div>
+            <div class="checkboxs">
+              <div class="checkbox checked" aria-label="Morador">
+                <div class="checkbox-circle">
+                  <div class="checkbox-circle-inner"></div>
+                </div>
+                <div class="checkbox-text">Morador</div>
+              </div>
+              <div class="checkbox" aria-label="Coletador">
+                <div class="checkbox-circle">
+                  <div class="checkbox-circle-inner"></div>
+                </div>
+                <div class="checkbox-text">Coletador</div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper morador visible">
+            <span class="label">Nome completo</span>
+            <div id="user-name" class="user-input">
+              <input type="text" />
+            </div>
+
+            <span class="label">Endereço de e-mail</span>
+            <div id="user-email" class="user-input">
+              <input type="email" />
+            </div>
+
+            <span class="label">Senha</span>
+            <div id="user-password" class="user-input">
+              <input type="password" />
+            </div>
+
+            <span class="label">Confirmar senha</span>
+            <div id="user-password-confirm" class="user-input">
+              <input type="password" />
+            </div>
+
+            <div class="buttons">
+              <button class="submit-button">Criar conta</button>
+              <a class="signin-button" href="/pages/login/index.html">Entrar</a>
+            </div>
+          </div>
+          <div class="wrapper coletador">
+            <span class="label">Nome completo</span>
+            <div id="user-name" class="user-input">
+              <input type="text" />
+            </div>
+
+            <span class="label">Senha</span>
+            <div id="user-password" class="user-input">
+              <input type="password" />
+            </div>
+
+            <span class="label">Confirmar senha</span>
+            <div id="user-password-confirm" class="user-input">
+              <input type="password" />
+            </div>
+
+            <span class="label">Código de Associação</span>
+            <div id="user-code" class="user-input">
+              <input type="text" />
+            </div>
+
+            <div class="buttons">
+              <button class="submit-button">Criar conta</button>
+              <a class="signin-button" href="/pages/login/index.html">Entrar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const checkbox = document.querySelectorAll(".checkbox");
+
+      checkbox.forEach((node) => {
+        node.addEventListener("click", (event) => {
+          const target = event.currentTarget;
+
+          const visible = target.ariaLabel;
+
+          if (target.classList.contains("checked")) {
+            return;
+          }
+
+          checkbox.forEach((node) => {
+            node.classList.remove("checked");
+          });
+
+          target.classList.add("checked");
+
+          const moradorWrapper = document.querySelector(".wrapper.morador");
+
+          const coletadorWrapper = document.querySelector(".wrapper.coletador");
+
+          if (visible === "Morador") {
+            moradorWrapper.classList.add("visible");
+            coletadorWrapper.classList.remove("visible");
+          }
+
+          if (visible === "Coletador") {
+            coletadorWrapper.classList.add("visible");
+            moradorWrapper.classList.remove("visible");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

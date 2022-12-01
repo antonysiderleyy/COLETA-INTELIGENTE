@@ -1,13 +1,250 @@
-.bg-verde{
-    position: absolute;
-    width: 200vw;
-    height: 95vh;
-    left: -50vw;
-    display: flex;
-    background: #e3f0dc;
-    border-radius: 50% 50% 0% 0%;
+#coleta-inteligente {
+    position: relative;
+    height: 100%;
+    flex-direction: column;
 }
 
-.titulo-instruções{
+section.instrucoes {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+
+.wrapper.left {
+    width: 50%;
+    padding: 100px 120px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper.right {
+    width: 50%;
+    padding: 100px 220px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.background-borda {
+    position: absolute;
+    width: 150vw;
+    height: 98vh;
+    left: -25vw;
+    background-color: #e3f0dc;
+}
+
+.instrucoes .background-borda {
+    border-radius: 0 0 55% 55%;
+    transform: rotate(0deg);
+}
+
+
+
+
+
+
+
+/* .title {
+  width: 500px;
+  font-size: 50px;
+  color: #818a7d;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: -80px;
+} */
+
+.intro {
+    width: 550px;
+    font-size: 25px;
+    color: #818a7d;
+    font-family: 'Familjen Grotesk', sans-serif;
     
+}
+
+.icone-seta {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 92vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #818a7d;
+    border-radius: 100%;
+    opacity: 50%;
+}
+
+.icone-seta svg {
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    fill: #818a7d;
+    transform: rotate(90deg);
+    opacity: 100%;   
+}
+
+.disponivel{
+    width: 80px;
+    height: 80px;
+    background-color: #88ce6a;
+    border-radius: 100%;
+}
+
+.disponivel{
+    border: 10px solid #818a7d;
+}
+
+.indisponivel{
+    width: 80px;
+    height: 80px;
+    background-color: #4b5845;
+    border-radius: 100%;
+}
+
+.indisponivel{
+    border: 8px solid #818a7d;
+    
+}
+
+
+.endereco1{
+    border: 5px solid #818a7d;
+    border-radius: 50px;
+    padding:10px;
+    font-size: 20px;
+    color: #818a7d;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.endereco2{
+    border: 5px solid #818a7d;
+    border-radius: 50px;
+    padding:10px;
+    font-size: 20px;
+    color: #818a7d;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-diponivel{       
+    align-items: center;    
+    width:300px;
+    margin-top: 10px;
+}
+
+.borda{
+    width: 450px;
+    height: 320px;
+    border-radius: 50px;
+    border: 5px solid #818a7d;
+    background: none;
+}
+
+.text1{
+  font-size: 20px;
+  color: #818a7d;
+  font-family: 'Familjen Grotesk', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.text2{
+    margin-top:20px;
+    font-size: 20px;
+    color: #818a7d;
+    font-family: 'Familjen Grotesk', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.enderecos{
+    display: flex;
+    left: 100%;
+}
+
+.markdisp{
+    margin-left: 20px;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border: #818a7d solid 5px;
+    background: #88ce6a;
+}
+
+.markindes{
+    margin-left: 20px;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:#818a7d solid 5px;
+    background:#4b5845;
+}
+
+.enderecos{
+    width: 60%;
+    max-width: 400px;
+}
+
+.lista{
+    width: 50%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;  
+    left: -5%;
+}
+
+details {
+    margin: 20px 0;
+}
+
+.sumario{
+    background-color: #88ce6a;
+    padding: 5%;
+    border-bottom: 2px solid #4b5845;
+    width: 530px;
+    height: 40px;
+    color: #e3f0dc;
+    display: flex;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    /* border-radius: 2vh; */
+    align-items: center;
+}
+
+.detalhe{
+    display: flex;
+    justify-content: center;
+    background-color: #4b5845;
+    /* border-radius: 10vw; */
+    height: 2vw;
+    color: #e3f0dc;
+    max-width: 30vw;
+
 }

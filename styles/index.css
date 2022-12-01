@@ -1,46 +1,27 @@
-.borda {
-  position: absolute;
-  width: 200vw;
-  height: 100vh;
-  left: -50vw;
-  display: flex;
-  background: #E3F0DC;
-  border-radius: 50%;
-  top: -40px;
-}
-
 header {
   position: fixed;
+  width: 100%;
+  height: 7rem;
+  padding: 0 20px;
+  top: 0;
+  left: 0;
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  top: 0px;
-  z-index: 999999;
-  width: 100%;
-  height: 100px;
-  padding: 0 20px;
-  background-color: #E3F0DC;
 }
 
-.logo {
+header .logo {
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.logo img {
+header .logo img {
   width: 200px;
 }
 
-.logo-nome {
-  font-size: 13px;
-  line-height: 15px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
+
 
 .texto {
   position: absolute;
@@ -104,3 +85,14 @@ header {
   width: 1270px;
  
 }
+
+/* .borda {
+  position: absolute;
+  width: 200vw;
+  height: 100vh;
+  left: -50vw;
+  display: flex;
+  background: #E3F0DC;
+  border-radius: 50%;
+  top: -40px;
+} */

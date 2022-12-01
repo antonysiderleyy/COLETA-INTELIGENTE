@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <title>Coleta Inteligente</title>
+</head>
+<body>
+    <div id="coleta-inteligente">
+
+        <section class="morador">
+            <div class="content left">
+                <h1 class="title-text">
+                    Segue as Instruções
+                </h1>
+                <ol class="instrucoes">
+                    <li class="instrucoes-item">1. Coloque seu endereço.</li>
+                    <li class="instrucoes-item">2. Informe um número para contato.</li>
+                    <li class="instrucoes-item">3. Complemente especificando o tipo de lixo para a reciclagem ou alguma observação importante.</li>
+                </ul>
+            </div>
+            <div class="content right">
+                <form class="user-form">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Rua Bernadete Xavier, 000 - Centro">
+
+                    <label for="contato">Contato</label>
+                    <input type="number" id="contato" name="contato" placeholder="(84) 9 0000 0000">
+
+                    <label for="complemento">Complemento (Opcional)</label>
+                    <textarea id="complemento" name="complemento" placeholder="Plástico, vidro..."></textarea>
+
+                    <input type="submit" value="Enviar" dir="ltr">
+                </form> 
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

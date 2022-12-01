@@ -1,14 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/inicio.css">
-    <title>Document</title>
+
+
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="/styles/inicio.css">
+    <link rel="stylesheet" href="/styles/table.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="bg-verde"></div>
-    <div class="titulo-instruções">segue as instruções</div>
+    <div id="coleta-inteligente">
+
+        <!-- <section class=instrucoes>
+            <div class="content">
+
+                <div class="wrapper left">
+                    <h2 class="title">Segue as Instruções</h2>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="intro">
+                        Ao lado é possível entender como a casa será vista como "disponível" ou "indisponível" para a coleta. Logo abaixo você identificará uma lista interativa, nela irá conter as
+                        localizações para coleta, em seguida indentifique se está disponivel para realizar a coleta ou não,
+                        e
+                        vamos a coleta!
+                    </p>
+                </div>
+
+                <div class="wrapper right">
+                    <div class="info-diponivel">
+                        <div class="text1">Disponível</div>
+                        <div class="endereco1">Endereço: Antony  <a class="markdisp"></a></div>
+                        <br>
+                        <br>
+                        <div class="text2">Indisponível</div>
+                        <div class="endereco2">Endereço: Antony  <a class="markindes"></a></div>
+                    </div>                   
+                    
+                </div>
+
+                <div class="icone-seta">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512">
+                        <path
+                            d="M23.12,9.91,19.25,6a1,1,0,0,0-1.42,0h0a1,1,0,0,0,0,1.41L21.39,11H1a1,1,0,0,0-1,1H0a1,1,0,0,0,1,1H21.45l-3.62,3.61a1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.42,0l3.87-3.88A3,3,0,0,0,23.12,9.91Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="background-borda"></div>
+        </section> -->
+
+        <section class=main>
+            <div class="search">
+                <input onkeyup="filter(event)" type="number" placeholder="ID" />
+                <input onkeyup="filter(event)" type="text" placeholder="Nome" />
+                <input onkeyup="filter(event)" type="text" placeholder="Endereço" />
+                <input onkeyup="filter(event)" type="number" placeholder="Contato" />
+            </div>
+            <div class="table">
+                <div class="table-head">
+                    <div class="title">
+                        <span class="title-text">ID</span>
+                    </div>
+                    <div class="title">
+                        <span class="title-text">Nome</span>
+                    </div>
+                    <div class="title">
+                        <span class="title-text">Endereço</span>
+                    </div>
+                    <div class="title">
+                        <span class="title-text">Contato</span>
+                    </div>
+                    <div class="title">
+                        <span class="title-text">Status</span>
+                    </div>
+                    <div class="title">
+                        <span class="title-text"></span>
+                    </div>
+                </div>
+                <ul id="table-body">
+                    <li class="table-item">
+                        <div class="info">
+                            <div class="label id">
+                                <span>1</span>
+                            </div>
+                            <div class="label nome">
+                                <span>Arthur Henrique de Oliveira Pinheiro</span>
+                            </div>
+                            <div class="label endereco">
+                                <a href="https://www.google.com.br/maps/place/Bar+Casa+Do+Carai/@-5.9214645,-35.381685,781m/data=!3m2!1e3!4b1!4m5!3m4!1s0x7b2514ea7dd1341:0x2c881aaac9d33cfe!8m2!3d-5.9214656!4d-35.3794709" target="_blank">Avenida Roberto Freire, 313 - Centro</a>
+                            </div>
+                            <div class="label contato">
+                                <span>90909090</span>
+                            </div>
+                            <div class="label status">
+                                <span>Disponível</span>
+                            </div>
+                            <div class="label buttons">
+                                <button style="background:  #baeea7;">Coletar</button>
+                                <!-- <button>Coletado</button> -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="table-item">
+                        <div class="info">
+                            <div class="label id">
+                                <span>2</span>
+                            </div>
+                            <div class="label nome">
+                                <span>Camila Toscano</span>
+                            </div>
+                            <div class="label endereco">
+                                <a href="https://www.google.com.br/maps/place/R.+Vivaldo+Pereira+de+Araújo,+150,+Currais+Novos+-+RN,+59380-000/@-6.2637796,-36.5162164,780m/data=!3m2!1e3!4b1!4m5!3m4!1s0x7b1d6051b759661:0x71b6fdf7e10c5614!8m2!3d-6.2637796!4d-36.5140223" target="_blank">Rua Vivaldo Pereira de Araújo, 150 - Centro</a>
+                            </div>
+                            <div class="label contato">
+                                <span>190</span>
+                            </div>
+                            <div class="label status">
+                                <span>Disponível</span>
+                            </div>
+                            <div class="label buttons">
+                                <button style="background:  #baeea7;">Coletar</button>
+                                <!-- <button>Coletado</button> -->
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="table-item">
+                        <div class="info">
+                            <div class="label id">
+                                <span>3</span>
+                            </div>
+                            <div class="label nome">
+                                <span>Antony Siderley Medeiros de Menezes Costa</span>
+                            </div>
+                            <div class="label endereco">
+                                <a href="https://www.google.com.br/maps/place/R.+Maria+Olindina+de+Araújo,+183+-+Parque+Dourado,+Currais+Novos+-+RN,+59380-000/@-6.25175,-36.5160953,780m/data=!3m2!1e3!4b1!4m5!3m4!1s0x7b1d66d878e23f5:0xb88e091d1ccac73f!8m2!3d-6.2517425!4d-36.5138739" target="_blank">Rua Maria Olindina de Araújo, 183 - Parque Dourado</a>
+                            </div>
+                            <div class="label contato">
+                                <span>98519136</span>
+                            </div>
+                            <div class="label status">
+                                <span>Saiu para coleta</span>
+                            </div>
+                            <div class="label buttons">
+                                <!-- <button>Coletar</button> -->
+                                <button style="background: #95bffd;">Coletado</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="table-item">
+                        <div class="info">
+                            <div class="label id">
+                                <span>4</span>
+                            </div>
+                            <div class="label nome">
+                                <span>Colegio Camilo Toscano</span>
+                            </div>
+                            <div class="label endereco">
+                                <a href="https://www.google.com.br/maps/place/Colégio+Camilo+Toscano+CCT/@-6.2664204,-36.5153263,780m/data=!3m2!1e3!4b1!4m5!3m4!1s0x7b1d604ae9e1ae9:0x48331b13b0712c7d!8m2!3d-6.2664597!4d-36.5130863" target="_blank">Rua Bernadete Xavier, 173 - Centro</a>
+                            </div>
+                            <div class="label contato">
+                                <span>34311385</span>
+                            </div>
+                            <div class="label status">
+                                <span>Saiu para coleta</span>
+                            </div>
+                            <div class="label buttons">
+                                <!-- <button>Coletar</button> -->
+                                <button style="background: #95bffd;">Coletado</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="table-item">
+                        <div class="info">
+                            <div class="label id">
+                                <span>5</span>
+                            </div>
+                            <div class="label nome">
+                                <span>Luiz Magalhães de Brito Neto</span>
+                            </div>
+                            <div class="label endereco">
+                                <a href="https://www.google.com/maps/place/R.+Lula+Gomes,+477,+Currais+Novos+-+RN,+59380-000,+Brasil/@-6.2656813,-36.5150761,19z/data=!4m13!1m7!3m6!1s0x7b1d6048f7d28a7:0xdd3058d115e2de01!2sR.+Lula+Gomes,+477,+Currais+Novos+-+RN,+59380-000,+Brasil!3b1!8m2!3d-6.2656493!4d-36.5143707!3m4!1s0x7b1d6048f7d28a7:0xdd3058d115e2de01!8m2!3d-6.2656493!4d-36.5143707" target="_blank">Rua Lula Gomes, 477 - Centro</a>
+                            </div>
+                            <div class="label contato">
+                                <span>80808080</span>
+                            </div>
+                            <div class="label status">
+                                <span>Coletado</span>
+                            </div>
+                            <div class="label buttons">
+                                <div style="width: 16px; height: 16px; background: rgb(53, 53, 53); border: 3px solid rgb(132, 132, 132); border-radius: 100%;"></div>
+                                <!-- <button>Coletar</button>
+                                <button>Coletado</button> -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        function filter(event) {
+            const { currentTarget } = event;
+            const { value, placeholder } = currentTarget;
+
+            const tableItems = document.querySelectorAll('#table-body li');
+
+            let labelSelector = '';
+
+            switch (placeholder) {
+                case 'ID': {
+                    labelSelector = '.id';
+                    break;
+                }
+                case 'Nome': {
+                    labelSelector = '.nome';
+                    break;
+                }
+                case 'Endereço': {
+                    labelSelector = '.endereco';
+                    break;
+                }
+                case 'Contato': {
+                    labelSelector = '.contato';
+                    break;
+                }
+            }
+
+            let label;
+            let txtValue;
+
+            for (let i = 0; i < tableItems.length; i++) {
+                label = tableItems[i].querySelector(labelSelector);
+
+                txtValue = label.textContent.toLowerCase() || label.innerText.toLowerCase();
+
+                if (txtValue.toLowerCase().indexOf(value.toLowerCase()) > -1) {
+                    tableItems[i].style.display = '';
+                } else {
+                    tableItems[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
 </body>
+
 </html>
+
+<!-- <a href="https://www.google.com/maps/place/R.+Lula+Gomes,+477,+Currais+Novos+-+RN,+59380-000,+Brasil/@-6.2656813,-36.5150761,19z/data=!4m13!1m7!3m6!1s0x7b1d6048f7d28a7:0xdd3058d115e2de01!2sR.+Lula+Gomes,+477,+Currais+Novos+-+RN,+59380-000,+Brasil!3b1!8m2!3d-6.2656493!4d-36.5143707!3m4!1s0x7b1d6048f7d28a7:0xdd3058d115e2de01!8m2!3d-6.2656493!4d-36.5143707" target="_blank"> -->
+<!-- <a href="https://www.google.com/maps/place/R.+Maria+Olindina+de+Ara%C3%BAjo,+183+-+Parque+Dourado,+Currais+Novos+-+RN,+59380-000/@-6.2517447,-36.5160899,17z/data=!3m1!4b1!4m5!3m4!1s0x7b1d66d878e23f5:0xb88e091d1ccac73f!8m2!3d-6.25175!4d-36.5139012" target="_blank"> -->
+
+<!--150 R. Vivaldo Pereira de Araújo-->
